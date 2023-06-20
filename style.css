@@ -1,0 +1,56 @@
+/* *{
+margin:0;
+padding:0;
+} */
+
+
+ul li{
+    list-style-type: none;
+    justify-self:flex-end;
+    display: inline;
+    gap: 30px;
+}
+body{
+    background-image: url(./shara\ desert.jpg);
+    /* background-position: ; */
+    background-size: cover;
+    
+}
+
+.navbar-menu{
+    /* color: white; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap: 45px;
+}
+
+.cards-container img{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.cards-container img:hover{
+transform: translateY(-10px);
+}
+
+@media screen  and (max-width:480px){
+
+    .cards-container{
+        display: grid;
+        grid-template-columns: 400px;
+        gap: 45px;
+    }
+
+    .cards-container img{
+        height: 250px;
+        width: 400px;
+        border-radius: 20px;
+    }
+    
+}

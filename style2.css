@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./shara\ desert.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 40px;
+    }
+
+.navbar{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 40px;
+    
+}
+
+.navbar-icon{
+    margin: 18px 40px;
+    cursor: pointer;
+    
+}
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-container{
+    /* align-items: center; */
+    /* ali */
+    /* justify-content: center; */
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.right-container{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap:20px
+}
+
+.box{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    background-size: cover;
+    box-sizing:border-box;
+    padding:16px;
+    cursor: pointer;
+}
+
+.box:hover{
+    transform: translateY(-10px);
+}
+.sahara{
+    font-size: 100px; 
+    font-weight: bold;
+}
+
+.box1{
+ 
+    background-image: url(./pic-1.png);
+}
+
+.box2{
+ 
+    background-image: url(./pic-2.png);
+}
+
+.box3{
+    background-image: url(./pic-3.png);
+}
+ .box4{
+    background-image: url(./pic-4.png);
+ }
+
+
+@media screen  and (min-width:500px) and (max-width:900px) {
+        .container2{
+        flex-direction: column;
+    }
+
+        .right-container{
+            display: grid;
+            grid-template-columns: 600px;
+            gap:20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .box{
+            height: 250px;
+            width: 506px;
+            border-radius: 20px;
+            /* background-size: cover; */
+            box-sizing:border-box;
+            padding:16px;
+            cursor: pointer;
+        }
+    
+ }
+
+ /* @media screen and (500px<= width <= 900px) {
+    .container2{
+        flex-direction: column;
+    }
+ } */
+
+ @media screen and (min-width: 250px) and (max-width: 500px) {
+ 
+
+    .sahara{
+        font-size: 36px;
+    }
+    .container2{
+        flex-direction: column;
+    }
+
+    .right-container{
+          display: grid;
+          grid-template-columns: 250px;
+          gap:20px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+
+    .box{
+            height: 250px;
+            width: 250px;
+            border-radius: 20px;
+            /* background-size: cover; */
+            box-sizing:border-box;
+            padding:16px;
+            cursor: pointer;
+        }
+
+}
