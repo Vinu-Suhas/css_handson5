@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather',serif;
 }
 
 body{
@@ -86,12 +87,19 @@ body{
     background-image: url(./pic-4.png);
  }
 
-
+/* tablet view */
 @media screen  and (min-width:500px) and (max-width:900px) {
         .container2{
         flex-direction: column;
     }
-
+    
+    body{
+        background-size:auto;
+        background-repeat: repeat;
+    }
+    .sahara{
+        font-size: 36px;
+    }
         .right-container{
             display: grid;
             grid-template-columns: 600px;
@@ -117,9 +125,23 @@ body{
         flex-direction: column;
     }
  } */
-
  @media screen and (min-width: 250px) and (max-width: 500px) {
- 
+     /* mobile view */
+     .navbar ul li{
+        display: flex;
+        flex-direction: column;
+        /* display: inline-block; */
+        /* margin: 20px 40px; */
+        margin: 2px 20px 2px 30px;
+        
+    }
+
+    .navbar-icon{
+      margin: 0px;
+    }
+    ul{
+        padding-inline-start: 0px;
+    }
 
     .sahara{
         font-size: 36px;
